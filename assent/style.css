@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap%27);
+
+/* alinea el contenido de la pag automaticamente (usar siempre) */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Menu
+   Logo*/
+
+.div-logo{
+    
+}
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+    font-size: 50px;
+}
+.menu li a {
+    /* sacamos estilo por defecto */
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(128, 46, 46);
+    font-size: 185%;
+}
+.menu li {
+    /* como yo quiero ver los Li (especificidad) */
+    display: inline-block;
+    margin: 0 7px;
+}
+.menu ul {
+    text-align: right;
+}
+
+
+
+
+main{
+    display: flex;
+    background-image: url(../Img/Fondo);
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    flex-direction: column-reverse;
+}
+
+.imagen{
+    margin: 15px;
+    width: 300px;
+}
+
+
+.parrafo-contenido{
+    border: 3px solid white;
+    padding: 7px;
+    display: grid;
+    
+    
+}
+.subtitulo_index{
+    color: rgb(158, 29, 18);
+    border-style: double;
+    padding: 10px;
+    margin: 30px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:"Comienza tu historia";
+    text-align: center;
+    
+}
+.parrafo{
+    text-align: center;
+    color: rgb(225, 197, 57);
+    font-family: serif;
+    margin: 30px;
+    grid-area: comienza tu historia;
+    
+}
+
+
+    /* contactanos */
+             
+.section__formulario{
+    height: 800px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+.div-imagen{
+    display: grid;
+    margin: 50px;
+    text-align:center
+}
+
+
+    /* guia */
+
+
+
+.subtitulo_guia{
+    color: rgb(158, 29, 18);
+    border-style: double;
+    padding: 10px;
+    margin: 30px;
+    text-align:center;
+}
+
+
+.sectionguia__grid{
+    height: 1500px;
+    display:grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "texto1 texto2"
+    "texto3 texto4";
+    
+}
+
+.columnasguia__grid{
+    color: rgb(44, 197, 231);
+    border-style: groove;
+    padding: 10px;
+    margin: 30px;
+}
+
+.parrafo_grid1{
+    grid-area: texto1;
+}
+.parrafo_grid2{
+    grid-area: texto2;
+}
+
+.parrafo_grid3{
+    grid-area: texto3;
+}
+
+.parrafo_grid4{
+    grid-area: texto4;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0)
+}        
+.instagram{
+    background-color: rgb(129, 16, 24);
+    border: 5px solid black; 
+}
+.instagram a{
+    list-style-type:none;
+    text-decoration:none;
+    color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+}
+.youtube{
+    list-style-type:none;
+    text-decoration:none;
+    background-color: rgb(129, 16, 24);
+    border: 5px solid black; 
+    color: aliceblue;
+}
+.youtube a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type:none;
+    text-decoration:none;
+    color: beige;
+}
+
+
+
+
+/* CONTACTANOS */
+
+.color-parrafoCont{
+    border: 3px solid rgb(150, 85, 85);
+    color: rgb(47, 144, 144);
+    font-family: 'Dancing Script', cursive;
+    margin: 2.5px;
+            }
+
+
