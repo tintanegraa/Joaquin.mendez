@@ -12,7 +12,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(5,4,73,1) 44%, rgba(9
 .li_nav:hover {
     transform: scale(2);
     transition: 1s;
-    
 }
 
 * {
