@@ -5,29 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assent/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <header>
-        <img src="../Img/LOGO.png" alt="imagen logo" width="188">
-        <nav class="menu">
-                <h1 class="color-title">NewAlianza</h1>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="foro.html">Foro</a></li>
-                        <li><a href="guia.html">Guia</a></li>
-                        <li><a href="contactanos.html">Contactanos</a></li>
-                        <li><a href="conocenos.html">Conocenos</a></li>
+        <div class="div-logo">
+            <h1 class="logo">NewAlianza</h1>          
+        </div> 
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guia.html">Guia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conocenos.html">Conocenos</a>
+                    </li>
                     </ul>
-        </nav>
+                </div>
+                </div>
+            </nav>
+            
         
     </header>
 
     <main class="img-fondo">
-        <h2 class="color-title">Conocenos</h2>
-        <p>Encontranos en:</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6567.997588394966!2d-58.382290000000005!3d-34.604192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf68982e7d%3A0x5f4aa6c4e16009ec!2sCerrito%20370%2C%20C1010%20CABA!5e0!3m2!1ses-419!2sar!4v1660089591113!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <section class="container mt-5">
+            <div class="row"> 
+                <div class="col-md-8 d-flex text-primary flex-column ">
+                    <h1>Quienes somos?</h1>
+                   <p> En Blizzard Entertainment ponemos nuestro corazón y 
+                    alma en todo lo que creamos. Nos guiamos por nuestros 
+                    valores fundamentales a diario para seguir creando las 
+                    experiencias de entretenimiento más extraordinarias para
+                    nuestros jugadores. No importa quién seas o dónde te encuentres:
+                    tanto si perteneces a nuestra comunidad dinámica y en constante 
+                    volución, como si trabajas con nosotros en una de las oficinas 
+                    que tenemos repartidas por todo el mundo o si te llevas un trocito
+                    de Blizzard al espacio, te daremos la bienvenida.
+                    
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="mw-100 rounded d-flex align-items-center" src="../Img/img Conocenos.jpg" alt="imagenConocenos">
+                </div>    
+            </div>
+        </section>
+
+        <section class="container mt-5">
+        <div class="row">
+            <h1></h1>
+        </div>
+    </section>
+
+        <section class="container">    
+            <div class="row">
+                <div class="col-md-10 d-flex flex-column text-primary align-items-center">
+                <h2>Ubicacion</h2>              
+            </div>    
+            <iframe class="mw-50 mt-5 posi rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6567.997588394966!2d-58.382290000000005!3d-34.604192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf68982e7d%3A0x5f4aa6c4e16009ec!2sCerrito%20370%2C%20C1010%20CABA!5e0!3m2!1ses-419!2sar!4v1660089591113!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+        </div>  
+            </div>
+        </section>
 
     </main>
     
@@ -41,5 +95,7 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>

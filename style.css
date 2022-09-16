@@ -6,8 +6,9 @@ header{
     align-items: center;
     flex-direction: column;
     /* background-color: rgb(0, 0, 0); */
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(5,4,73,1) 44%, rgba(9,9,121,1) 71%, rgba(0,212,255,1) 100%);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
 }
 .li_nav:hover {
     transform: scale(2);
@@ -15,9 +16,15 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(5,4,73,1) 44%, rgba(9
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+.hero{
+    background-image: url();
+    padding-inline: 599px;
 }
 /* Menu
    Logo*/
@@ -30,33 +37,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(5,4,73,1) 44%, rgba(9
     -webkit-animation: text-shadow-pop-left 0.6s both;
 	        animation: text-shadow-pop-left 0.6s both;
 }
-.menu li a {
-    /* sacamos estilo por defecto */
-    list-style-type: none;
-    text-decoration: none;
-    color: rgb(128, 46, 46);
-    font-size: 185%;
-}
-.menu li {
-    /* como yo quiero ver los Li (especificidad) */
-    display: inline-block;
-    margin: 0 7px;
-}
-.menu ul {
-    text-align: right;
-}
+
+
 
 
 
 
 main{
     display: flex;
-    background-image: url(../Img/Fondo);
-    height: 800px;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    flex-direction: column-reverse;
+    background-image: url(./Img/Fondo\ 6.jpg);
+    height: 1500px;
+    flex-direction:column ;  
 }
 
 .imagen{
@@ -64,14 +55,30 @@ main{
     width: 300px;
 }
 
+.preguntasforo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 128, 0);
+    font-weight:300;
+    margin: 30px;
+}
+
+
+
+
+
+.container{
+    background-color: aliceblue;
+}
 
 .parrafo-contenido{
-    border: 3px solid white;
     padding: 7px;
-    display: grid;
-    
-    
+    display: flex;
+    flex-direction: column;
 }
+
 .subtitulo_index{
     color: rgb(158, 29, 18);
     border-style: double;
@@ -148,10 +155,11 @@ main{
 
 .parrafo{
     text-align: center;
-    color: rgb(225, 197, 57);
-    font-family: serif;
+    color: rgb(255, 128, 0);
+    font-weight:300;
     margin: 30px;
     grid-area: comienza tu historia;
+    
     
 }
 
@@ -257,5 +265,3 @@ footer{
     font-family: 'Dancing Script', cursive;
     margin: 2.5px;
             }
-
-
