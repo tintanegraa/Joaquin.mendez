@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactanos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -41,56 +41,92 @@
 
     </header>
 
-    <main class="img-fondo">
-
-        <h2 class="subtitulo">Contactanos</h2>
-
-        <!-- boton de enviar y de borrar el texto -->
-        <p class="parrafo">Toda consulta o mensaje que ayude a crecer el Proyecto, contactanos por el siguiente formoulario.</p>
-
-            <section class="section__formulario">
-
-                <p class="parrafo">Formulario:</p>
-                    <input type="text" placeholder="Nombre completo" />
-                    <br />
-                    <input type="Email" placeholder="Email" />
-                    <br />
-                    <p class="parrafo">Fecha de Nacimiento:</p>
-                    <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}" />
-
-                    <p class="parrafo">Sexo:</p>
-
-           
-                    <input class="genero-horizontal" type="radio" name="sexo" id="Hombre" />
-                    <label for="Hombre" class="parrafo">Hombre</label>
+    <main class="bg-secondary img-fondo">
+        <h2 class="subtitulo_index">No dudes en Contactarnos</h2>
+        <section class="d-flex justify-content-center p-5 ">
+            <div class="card col-sm-3 p-3">
+                <div class="mb-3">
+                    <h4>Contacto</h4>  
+            </div>
+            <div class="mb-2">
+                <form action="">
+                    <div class="mb-2">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="ej: Gabriel">
+                    </div>
+                    <div class="mb-2">
+                        <label for="apellido">APELLIDO</label>
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="ej: Mendez">
+                    </div>
+                    <div class="mb-2">
+                        <label for="correo">CORREO</label>
+                        <input type="text" class="form-control" name="correo" id="correo" placeholder="ej: ****@outlock.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="nombre">DIRECCION</label>
+                        <input type="text" class="form-control" name="direccion" id="direccion" placeholder="ej: Ambrosetti 145">
+                    </div>
+                    <div class="mb-2">
+                        <label for="sexo">SEXO:</label>
+                        <input type="radio"  name="sexo" id="masculino" value="masculino"> Masculino
+                        <input type="radio"  name="sexo" id="femenino" value="femenino"> Femenino
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensaje">Menasaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder=" ej: hola!" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
                     
-                    <input class="genero-horizontal" type="radio" name="sexo" id="Mujer" />
-                    <label  for="Mujer" class="parrafo">Mujer</label>
-                    
-                    <input class="genero-horizontal" type="radio" name="sexo" id="Otro" />
-                    <label for="Otro" class="parrafo">Otro</label>
-                    
+                </form>
+            </div>
+        </section>
+        
 
-                    <hr />
-
-                    <textarea cols="30" rows="10" placeholder="Escriba su Comentario"></textarea>              
-                    <br />
-
-                    <input type="submit" value="Enviar información" />
-                    <br />
-
-            </section>    
+    
 
     </main>
     
     <footer class="footer-fondo">
-        <div class="instagram">
-            <img src="../Img/icons8-instagram-24.png" alt="" ><a href="https://www.instagram.com">Instagram</a>
-        </div>
+       
+        <section class="container-fluid text-center">
+            <div class="row p-5 bg-dark text-white">
+                <div>
+                    <div class="col-xs-12 col-md-6 col-lg-3"></div>
+                        <p class="h1 mb-3">Linkas</p>
+                        <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Comentarios//</a>
+                        <a class="text-secondary text-decoration-none" href="#">Reclamos//</a>
+                        </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3"></div>
+                        <p class="h2 mb-3">Contacto</p>
+                        <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="https://www.instagram.com/joaquin.mendesz/">Instagram</a>
+                        <a class="text-secondary text-decoration-none" href="#">Faceboock//</a>
+                        <a class="text-secondary text-decoration-none" href="#">Soporte Tecnico//</a>
+                        </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3"></div>
+                        <p class="h3 mb-3">Adicional</p>
+                        <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Empleo//</a>
+                        <a class="text-secondary text-decoration-none" href="">Terminos y condiciones//</a>
+                        <a class="text-secondary text-decoration-none" href="">Politaica y privacidad//</a>
+                        </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3"></div>
+                        <p class="h4 mb-3">Direccion</p>
+                        <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Av. Rivadavia 2134 (provincia de Buenos Aires)</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="text-white text-center">CopyRigh - All rights reserved © 2022</p>
 
-        <div class="youtube">   
-            <img src="../Img/icons8-youtube-24.png" alt="icono" ><a href="https://www.youtube.com/">Youtube</a>
+                    </div>
+                    
+                </div>
         </div>
+                
+    </section>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
