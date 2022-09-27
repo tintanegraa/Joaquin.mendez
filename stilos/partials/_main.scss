@@ -1,0 +1,55 @@
+main{
+    display: flex;
+    background-image: url(../Img/Fondo\ 6.jpg);
+    height: 1500px;
+    flex-direction:column;  
+
+    .parrafo-contenido{
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtitulo_index{
+        color: rgb(158, 29, 18);
+        border-style: double;
+        padding: 10px;
+        margin: 20px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:"Comienza tu historia";
+        text-align: center;
+        -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+
+    .parrafo{
+        text-align: center;
+        color: rgb(255, 128, 0);
+        font-weight:300;
+        margin: 30px;
+        grid-area: comienza tu historia;  
+    }
+
+    .container{
+        background-color: aliceblue;
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
