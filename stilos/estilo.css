@@ -1,68 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap%27);
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "kanit", sans-serif;
-}
-*::-moz-selection {
-  background-color: black;
-  color: #00ffff;
-}
-*::selection {
-  background-color: black;
-  color: #00ffff;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-}
-header .logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: brown;
-  font-size: 50px;
-  -webkit-animation: text-shadow-pop-left 0.6s both;
-  animation: text-shadow-pop-left 0.6s both;
-}
-
-@-webkit-keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
-}
-
-@keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
-}
-main {
-  display: flex;
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+.main__inicio__section1 {
   background-image: url(../Img/Fondo\ 6.jpg);
-  height: 1500px;
-  flex-direction: column;
 }
-main .parrafo-contenido {
+.main__inicio__section1 .parrafo-contenido {
   padding: 7px;
-  display: flex;
-  flex-direction: column;
 }
-main .subtitulo_index {
+.main__inicio__section1 h1 {
   color: rgb(158, 29, 18);
   border-style: double;
   padding: 10px;
@@ -77,15 +20,15 @@ main .subtitulo_index {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .parrafo {
+.main__inicio__section1 .parrafo {
   text-align: center;
   color: rgb(255, 128, 0);
   font-weight: 300;
   margin: 30px;
   grid-area: comienza tu historia;
 }
-main .container {
-  background-color: aliceblue;
+.main__inicio__section1 .main__inicio__section1__card {
+  padding-bottom: 100px;
 }
 
 @-webkit-keyframes tracking-in-expand-fwd {
@@ -118,14 +61,17 @@ main .container {
   }
 }
 header {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+header .navbar {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: rgb(0, 0, 0); */
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  justify-content: center;
 }
 header .logo {
+  cursor: pointer;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: brown;
   font-size: 50px;
@@ -133,23 +79,38 @@ header .logo {
   animation: text-shadow-pop-left 0.6s both;
 }
 
-@keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
+.bi-facebook {
+  background-color: rgb(55, 82, 234);
 }
-main {
+
+.bi-instagram {
+  background-color: rgb(178, 42, 211);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "kanit", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #00ffff;
+}
+*::selection {
+  background-color: black;
+  color: #00ffff;
+}
+
+.flexProperties, .main__inicio__section1 .parrafo-contenido {
   display: flex;
-  background-image: url(../Img/Fondo\ 6.jpg);
-  height: 1500px;
   flex-direction: column;
 }
-main .subtitulo_index {
+
+.main__foro__section1 {
+  background-image: url(../Img/Fondo\ 6.jpg);
+}
+.main__foro__section1 h1 {
   color: rgb(158, 29, 18);
   border-style: double;
   padding: 10px;
@@ -164,7 +125,7 @@ main .subtitulo_index {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .preguntasforo {
+.main__foro__section1 .preguntasforo {
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -194,45 +155,22 @@ main .preguntasforo {
   margin: 30px;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: rgb(0, 0, 0); */
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-}
-header .logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: brown;
-  font-size: 50px;
-  -webkit-animation: text-shadow-pop-left 0.6s both;
-  animation: text-shadow-pop-left 0.6s both;
-}
-
-@keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
-}
-main {
-  display: flex;
+.main__contactanos__section1 {
   background-image: url(../Img/Fondo\ 6.jpg);
-  height: 1500px;
-  flex-direction: column;
 }
-main .subtitulo_index {
+.main__contactanos__section1__card {
+  width: 1800px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.main__contactanos__section1 h2 {
+  padding-top: 50px;
   color: rgb(158, 29, 18);
   border-style: double;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: "Comienza tu historia";
+  grid-template-areas: "No Dudes en Contactarnos";
   text-align: center;
   -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -241,7 +179,7 @@ main .subtitulo_index {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .preguntasforo {
+.main__contactanos__section1 .preguntasforo {
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -263,53 +201,17 @@ main .preguntasforo {
     opacity: 1;
   }
 }
-.preguntasforo {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-weight: 600;
-  margin: 30px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: rgb(0, 0, 0); */
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-}
-header .logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: brown;
-  font-size: 50px;
-  -webkit-animation: text-shadow-pop-left 0.6s both;
-  animation: text-shadow-pop-left 0.6s both;
-}
-
-@keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
-}
-main {
-  display: flex;
+.main__conocenos__section1 {
   background-image: url(../Img/Fondo\ 6.jpg);
-  height: 1500px;
-  flex-direction: column;
 }
-main .subtitulo_index {
+.main__conocenos__section1 h1 {
+  padding-top: 50px;
   color: rgb(158, 29, 18);
   border-style: double;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: "Comienza tu historia";
+  grid-template-areas: "No Dudes en Contactarnos";
   text-align: center;
   -webkit-animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand-fwd 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -318,12 +220,32 @@ main .subtitulo_index {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .preguntasforo {
+.main__conocenos__section1 section {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+.main__conocenos__section1 section h3 {
+  font-size: 30px;
   text-align: center;
-  font-weight: 600;
+  color: rgb(255, 128, 0);
+  font-weight: 300;
   margin: 30px;
+}
+.main__conocenos__section1 section p {
+  text-align: center;
+  color: rgb(255, 128, 0);
+  font-weight: 300;
+  margin: 30px;
+}
+.main__conocenos__section1 section img {
+  width: 600px;
+}
+
+.mapa {
+  width: 800px;
+  padding-bottom: 50px;
 }
 
 @keyframes tracking-in-expand-fwd {
@@ -340,47 +262,10 @@ main .preguntasforo {
     opacity: 1;
   }
 }
-.preguntasforo {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-weight: 600;
-  margin: 30px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: rgb(0, 0, 0); */
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-}
-header .logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: brown;
-  font-size: 50px;
-  -webkit-animation: text-shadow-pop-left 0.6s both;
-  animation: text-shadow-pop-left 0.6s both;
-}
-
-@keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    transform: translateX(3px);
-  }
-}
-main {
-  display: flex;
+.main__guia__section1 {
   background-image: url(../Img/Fondo\ 6.jpg);
-  height: 1500px;
-  flex-direction: column;
 }
-main .subtitulo_index {
+.main__guia__section1 .subtitulo_index {
   color: rgb(158, 29, 18);
   border-style: double;
   padding: 10px;
@@ -395,7 +280,7 @@ main .subtitulo_index {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .subtitulo_guia {
+.main__guia__section1 h1 {
   color: rgb(158, 29, 18);
   border-style: double;
   padding: 10px;
@@ -408,38 +293,32 @@ main .subtitulo_guia {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-main .sectionguia__grid {
-  height: 1500px;
-  display: grid;
+.main__guia__section1 .columnasguia__grid {
   text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "texto1 texto2" "texto3 texto4";
-}
-main .sectionguia__grid .parrafo_grid1 {
-  grid-area: texto1;
-}
-main .sectionguia__grid .parrafo_grid2 {
-  grid-area: texto2;
-}
-main .sectionguia__grid .parrafo_grid3 {
-  grid-area: texto3;
-}
-main .sectionguia__grid .parrafo_grid4 {
-  grid-area: texto4;
-}
-main .columnasguia__grid {
   color: rgb(44, 197, 231);
   border-style: groove;
   padding: 10px;
   margin: 30px;
 }
-main .parrafo {
+.main__guia__section1 .parrafo {
   text-align: center;
   color: rgb(255, 128, 0);
   font-weight: 300;
   margin: 30px;
   grid-area: comienza tu historia;
+}
+.main__guia__section1 .main__inicio__section1__carrusel {
+  padding-bottom: 100px;
+}
+
+.main__inicio__section1__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding-bottom: 50px;
+}
+.main__inicio__section1__grid img {
+  width: 400px;
 }
 
 @keyframes tracking-in-expand-fwd {

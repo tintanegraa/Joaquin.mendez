@@ -1,7 +1,8 @@
+@import "./paginas/index";
 @import "./partials/variables";
-@import "./partials/reset";
 @import "./partials/header";
-@import "./partials/main";
+@import "./partials/footer";
+@import "./partials/global";
 
 //paginas//
 
@@ -9,3 +10,4 @@
 @import "./paginas/contactanos";
 @import "./paginas/conocenos";
 @import "./paginas/guia";
+

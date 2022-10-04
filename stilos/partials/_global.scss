@@ -10,3 +10,17 @@
       }
 }
 
+
+
+// extend
+
+.flexProperties {
+    display:flex;
+    flex-direction: column;
+}
+
+// mixin
+
+@mixin templateGrid ($columns) {
+    grid-template-columns: repeat($columns, 1fr);
+}
