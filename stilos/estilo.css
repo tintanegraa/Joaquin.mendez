@@ -155,15 +155,15 @@ header .logo {
   margin: 30px;
 }
 
-.main__contactanos__section1 {
+.main__contactanos__section2 {
   background-image: url(../Img/Fondo\ 6.jpg);
 }
-.main__contactanos__section1__card {
+.main__contactanos__section2__card {
   width: 1800px;
   margin-top: 50px;
   padding-bottom: 50px;
 }
-.main__contactanos__section1 h2 {
+.main__contactanos__section2 h2 {
   padding-top: 50px;
   color: rgb(158, 29, 18);
   border-style: double;
@@ -179,7 +179,7 @@ header .logo {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.main__contactanos__section1 .preguntasforo {
+.main__contactanos__section2 .preguntasforo {
   flex-direction: column;
   align-items: center;
   text-align: center;
